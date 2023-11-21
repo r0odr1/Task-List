@@ -40,8 +40,8 @@ function App() {
   return (
     <main>
       <aside>
-        <h1>Prueba Tecnica React</h1>
-        <h2>Añadir y eliminar tareas de una lista</h2>
+        <h1>Task List</h1>
+        <h2>Add and remove tasks from your list</h2>
         <form onSubmit={handleSubmit} aria-label='Añadir eleentos a la lista'>
           <label>
             Nueva Tarea:
@@ -49,17 +49,17 @@ function App() {
               name='item'
               required
               type='text'
-              placeholder='Escribe Tarea'
+              placeholder='Write a task'
             />
           </label>
           <button>ADD</button>
         </form>
       </aside>
       <section>
-        <h2>Lista de Tareas</h2>
+        <h2>Task List</h2>
           {
             items.length === 0 ? (
-              <p><strong>No hay tareas en la lista</strong></p>
+              <p><strong>There are no tasks in the list</strong></p>
             ) : (
               <ul>
                 {
