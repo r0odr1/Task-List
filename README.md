@@ -1,27 +1,58 @@
 # React + TypeScript + Vite
+​
+## Table of contents 📄
+- [Overview](#overview)
+  - [Installation](#Installation)  
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+- [My process](#my-process)
+  - [Built with](#built-with)
+- [Authors](#authors)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Overview :writing_hand:
+This application will help you keep track of what you need, list tasks, and delete them, but the important thing is that if you close the application, your information will not be lost
 
-Currently, two official plugins are available:
+### Installation :gear:
+To get started with the project, follow these steps:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+1. Clone the repository:
+```shell
+git clone https://github.com/r0odr1/Task-List.git
+  ```
+2. Navigate to the project directory:
+```shell
+cd list-items-react
+ ```
+3. Install the dependencies:
+```shell
+ npm install
+  ```
+4. Start the application: 
+```shell
+ npm run dev
+  ```
+### The Challenge :weight_lifting_man:
 
-## Expanding the ESLint configuration
+The main challenge of the application was to create it in React along with Typescript, but additionally, store the information without losing it even if the page is reloaded
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+What you can do:
 
-- Configure the top-level `parserOptions` property like this:
+* Add as much information as you want.
+* Delete tasks.
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+### Screenshot 📷
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+![image](https://github.com/r0odr1/Task-List/assets/126527883/27fa083e-e3c0-4921-bc04-afbaea4316ee)
+
+![image](https://github.com/r0odr1/Task-List/assets/126527883/9596c7a8-31dd-4a77-8fe1-b55955753dd9)
+
+## My Process 🏗️
+### Built with 🛠️
+
+* React: TypeScript library.
+* CSS: CSS preprocessor for easy and organized styling.
+
+## Authors 👊
+
+This project was created by [r0odr1](https://github.com/r0odr1).
+
