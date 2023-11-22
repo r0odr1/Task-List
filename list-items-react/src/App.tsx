@@ -15,14 +15,14 @@ function App() {
   const { items, addItem, removeItem } = useItems()
 
   useSEO({
-    title: `[${items.length}] Prueba tecnica de React`,
+    title: `[${items.length}] Task List`,
     description: 'Añadir y eliminar tareas a una lista'
   })
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
 
-    const {elements } = event.currentTarget
+    const { elements } = event.currentTarget
 
     const input = elements.namedItem('item')
     const isInput = input instanceof HTMLInputElement
@@ -42,7 +42,7 @@ function App() {
       <aside>
         <h1>Task List</h1>
         <h2>Add and remove tasks from your list</h2>
-        <form onSubmit={handleSubmit} aria-label='Añadir eleentos a la lista'>
+        <form onSubmit={handleSubmit} aria-label='Añadir elemetos a la lista'>
           <label>
             Nueva Tarea:
             <input
@@ -59,7 +59,9 @@ function App() {
         <h2>Task List</h2>
           {
             items.length === 0 ? (
-              <p><strong>There are no tasks in the list</strong></p>
+              <p>
+                <strong>There are no tasks in the list</strong>
+              </p>
             ) : (
               <ul>
                 {
@@ -70,7 +72,8 @@ function App() {
                         handleClick={createHandleRemoveItem(item.id)}
                         key={item.id} />
                     )
-                  })}
+                  })
+                }
               </ul>
             )
           }

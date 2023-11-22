@@ -1,8 +1,16 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { type Item } from "../App";
+import "../components/Item.css";
 
 export const useItems = () => {
-  const [items, setItems] = useState<Item[]>([]);
+  const [items, setItems] = useState<Item[]>(() => {
+    const storedItems = localStorage.getItem("taskListItems");
+    return storedItems ? JSON.parse(storedItems) : [];
+  });
+
+  useEffect(() => {
+    localStorage.setItem("taskListItems", JSON.stringify(items));
+  }, [items]);
 
   const addItem = (text: string) => {
     const newItem: Item = {
